@@ -80,7 +80,7 @@ export async function POST(req: Request) {
         },
       });
     }
-
+    console.log('user created', newUser)
     return NextResponse.json({ message: "OK", user: newUser });
   }
 
